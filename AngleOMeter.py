@@ -108,7 +108,6 @@ while True:
 		else:
 			roll = math.atan(accY/math.sqrt((accX**2)+(accZ**2))) * radToDeg
 			pitch = math.atan2(-accX,accZ) * radToDeg
-		print(roll)
 		kalmanX[num].setAngle(roll)
 		kalmanY[num].setAngle(pitch)
 		gyroXAngle = roll
